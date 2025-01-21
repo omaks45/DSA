@@ -22,6 +22,6 @@ function createCounter(init) {
 	}
 }
 const count = (createCounter(5))
-count.increment()
-count.reset()
-count.decrement()
+console.log(count.increment())
+console.log(count.reset())
+console.log(count.decrement())
