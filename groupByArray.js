@@ -7,7 +7,7 @@
 Array.prototype.groupBy = function(fn) {
     //The reduce method is called on the array.
     return this.reduce((acc, val) => {
-        //The key is the result of the function call on the value.
+        //The key is the result of the function call on the value. it determines how the elements are grouped.
         const key = fn(val)
         //If the key does not exist in the accumulator, create it and assign an empty array to it.
         if (!acc[key]) {
